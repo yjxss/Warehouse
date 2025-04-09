@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>遇见xiao松鼠的仓库</title>
+    <style>
+      @font-face {
+        font-family: wankuti;
+        src: url(fontfamily/wankuti.ttf);
+      }
+      @font-face {
+        font-family: tangguoti;
+        src: url(fontfamily/tangguoti.otf);
+      }
+      @font-face {
+        font-family: mengshenti;
+        src: url(fontfamily/mengshenti.ttf);
+      }
+      html,
+      body {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        font-family: wankuti;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 120px;
+        font-family: mengshenti;
+        letter-spacing: 20px;
+      }
+      article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #00000073;
+        color: #fff;
+        height: auto;
+        width: 100%;
+        padding-top: 100px;
+      }
+      article p {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 35px;
+        word-break: break-all;
+        line-height: 130%;
+      }
+      article img {
+        border-radius: 5px;
+      }
+      .background {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .neirong {
+        align-self: center;
+        display: flex;
+        background-color: #ffffff73;
+        border-radius: 10px;
+        height: 400px;
+        width: 1000px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 30px;
+        color: black;
+      }
+      .tupian {
+        display: flex;
+        height: 100%;
+        flex: 1;
+        border: red solid;
+      }
+      .wenzhang {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: auto;
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+        border: red solid;
+      }
+      .biaoti {
+        display: block;
+        height: 100px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: tangguoti;
+      }
+      .wenzi {
+        display: block;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 25px;
+        font-family: wankuti;
+        word-break: break-all;
+      }
+      .dibu {
+        display: block;
+        background-color: #ffffff73;
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(205, 211, 211, 0.848);
+      }
+      *::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--背景图片-->
+    <img class="background" src="funcimages/background.png" alt="background" />
+    <!--顶部标题-->
+    <header>遇见xiao松鼠的游戏库</header>
+
+    <!--主体部分-->
+    <article class="flex column">
+      <!--个人栏-->
+      <p>--- 遇见xiao松鼠 ---</p>
+      <div class="neirong" style="height: 300px">
+        <!--个人介绍-->
+        <div
+          class="tupian"
+          style="
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+          "
+        >
+          <!--头像-->
+          <div>
+            <img
+              style="border-radius: 50%"
+              src="funcimages/yjxss.png"
+              alt="遇见xiao松鼠"
+              height="100px"
+              width="100px"
+            />
+          </div>
+          <!--介绍-->
+          <div style="text-align: center; height: auto">遇见xiao松鼠</div>
+          <div style="text-align: start; height: auto">
+            我的b站主页:
+            <a
+              href="https://space.bilibili.com/1070194998?spm_id_from=333.1007.0.0"
+              >前往BiliBli</a
+            >
+            <br />我的GitHub主页:
+            <a href="https://github.com/yjxss">前往GitHub</a>
+          </div>
+        </div>
+        <!--其它平台的链接-->
+        <div
+          class="wenzhang"
+          style="text-align: start; line-height: 120%; align-items: flex-start"
+        >
+          你好呀,我是遇见xiao松鼠,欢迎来到我的仓库,up的资源大部分上传在123云盘上面,建议使用网页版下载,这样可以通过油猴脚本的插件使用vip功能,解除下载限制哦.
+          <a href="">点击我看教程视频</a>
+        </div>
+      </div>
+
+      <!--赞赏栏-->
+      <p>--- 赞赏 ---- ---- 说明 ---</p>
+      <div class="neirong">
+        <div
+          class="tupian"
+          style="
+            flex: 1;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+          "
+        >
+          <img src="funcimages/赞赏码.png" alt="赞赏码" height="200px" />
+          <div style="text-align: center; height: auto; margin-top: 10px">
+            <br />遇见xiao松鼠的赞赏码
+          </div>
+        </div>
+        <div
+          class="wenzhang"
+          style="flex: 2; text-align: start; line-height: 130%"
+        >
+          <b>已知可能引起无法打开游戏的原因(从主到次):</b><br />
+          1.操作系统是32位<br />
+          2.文件路径出现中文（从磁盘起到exe启动项这一整条路径）<br />
+          3.杀毒软件将破解文件视为恶意文件列入黑名单<br />
+          4.windows用户名称出现中文<br />
+        </div>
+      </div>
+
+      <!--资源栏-->
+      <p>--- 学习版游戏资源 ---</p>
+      <p>
+        注意: 禁止将游戏资源用于商业用途(违者后果自负),
+        up免费分享的游戏资源仅供个人娱乐，快乐才是最重要的哦~
+      </p>
+      <!---->
+      <div class="neirong">
+        <div class="tupian"></div>
+        <div class="wenzhang"></div>
+      </div>
+
+      <!--钢铁之尾-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/tailsofiron.jpg"
+            alt="tails of iron"
+            style="height: 100%"
+          />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">钢铁之尾 <br />Tails of Iron</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>tails of iron 链接:
+            https://pan.baidu.com/s/1dmRV3upiFCVdfsYy8sMEUg?pwd=avzh 提取码:
+            avzh
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="网站地址">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+      </div>
+
+      <!--sekiro-->
+      <div class="neirong">
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">只狼:影逝二度<br />sekiro</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-nyhDv提取码:ejpq
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="网站地址">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+        <!--图片-->
+        <div class="tupian">
+          <img src="images/sekiro.jpg" alt="sekiro" style="height: 100%" />
+        </div>
+      </div>
+
+      <!--真三国无双:起源-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/dynastywarriorsorigins.jpg"
+            alt="dynastywarriorsorigins"
+            style="height: 100%"
+          />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">真三国无双:<br />起源</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-1ZhDv提取码:yjxs
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Lies of P-->
+      <div class="neirong">
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">匹诺曹的谎言<br />Lies of P</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-4ZhDv提取码:yjxs
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+        <!--图片-->
+        <div class="tupian">
+          <img src="images/liesofp.jpg" alt="liesofp" style="height: 100%" />
+        </div>
+      </div>
+
+      <!--God of War-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img src="images/godofwar.jpg" alt="godofwar" style="height: 100%" />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">战神4 <br />God Of War</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-JZhDv提取码:yjxs
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Lobotomy Corporation-->
+      <div class="neirong">
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">脑叶公司 Lobotomy Corporation</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b
+            >https://pan.baidu.com/s/1UwCm75quE7f4tUE8qRxLyQ?pwd=an99
+            提取码:an99
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/lobotomycorporation.png"
+            alt="Lobotomy Corporation"
+            style="height: 100%"
+          />
+        </div>
+      </div>
+
+      <!--Library Of Ruina-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/libraryofruina.png"
+            alt="libraryofruina"
+            style="height: 100%"
+          />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">废墟图书馆<br />Library Of Ruina</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b
+            >https://pan.baidu.com/s/1Kyo1leA2eZTMYkU3zdXotA?pwd=khb7
+            提取码:khb7
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+      </div>
+
+      <!--hollowknight-->
+      <div class="neirong">
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">空洞骑士<br />Hollow Knight</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-pZhDv提取码:yjxs
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/hollowknight.png"
+            alt="hollowknight"
+            style="height: 100%"
+          />
+        </div>
+      </div>
+
+      <!--endermagnolia-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/endermagnolia.jpg"
+            alt="endermagnolia"
+            style="height: 100%"
+          />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">终焉之玛格诺利亚<br />Ender Magnolia</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-fZhDv提取码:yjxs
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+      </div>
+
+      <!--最终幻想7重制版-->
+      <div class="neirong">
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">最终幻想7重制版(并非重生)</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-BZhDv提取码:yjxs
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a href="">up的对应视频,请参照视频内的操作(点击我)</a>
+          </div>
+        </div>
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/finalfantasyVII.jpg"
+            alt="finalfantasyVII"
+            style="height: 100%"
+          />
+        </div>
+      </div>
+
+      <!--堕落之主-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/lordsofthefallen.jpg"
+            alt="lordsofthefallen"
+            style="height: 100%"
+          />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti"><br />堕落之主</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-MZhDv提取码:yjxs
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a
+              href="https://www.bilibili.com/video/BV1DiznYjEpz/?spm_id_from=333.1387.upload.video_card.click"
+              >up的对应视频,请参照视频内的操作(点击我)</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--生化危机4重制版-->
+      <div class="neirong">
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">生化危机4重制版[本体+DLC(不含老王)]</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-wZhDv提取码:yjxs
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a
+              href="https://www.bilibili.com/video/BV17ZztYjEb3/?spm_id_from=333.1387.upload.video_card.click&vd_source=43b643253e3ee6554a4fdecbff21b1b5"
+              >up对应的运行视频(点击我)</a
+            >
+            <br /><b>注意:</b>该资源问题反馈较多,请谨慎下载
+          </div>
+        </div>
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/residentevil4.png"
+            alt="代替名称"
+            style="height: 100%"
+          />
+        </div>
+      </div>
+
+      <!--杀戮的天使-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/angelsofdeath.png"
+            alt="angelsofdeath"
+            style="height: 100%"
+          />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">杀戮的天使 [本体+艾迪篇]</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b
+            >https://pan.baidu.com/s/10NDWJUORiqQnYX4f8Bi-Pw?pwd=kzna
+            提取码:kzna
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a
+              href="https://www.bilibili.com/video/BV1eYzwYiEd6/?spm_id_from=333.1387.upload.video_card.click&vd_source=43b643253e3ee6554a4fdecbff21b1b5"
+              >up的对应视频,请参照视频内的操作(点击我)</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--issacRebirth-->
+      <div class="neirong">
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">以撒的结合:<br />重生</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b
+            >https://pan.baidu.com/s/19PLD1bkcCJeWsDE5w6or6g?pwd=xe84
+            提取码:xe84
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a
+              href="https://www.bilibili.com/video/BV1dyBiYAEQu/?spm_id_from=333.1387.upload.video_card.click&vd_source=43b643253e3ee6554a4fdecbff21b1b5"
+              >up的对应视频,请参照视频内的操作(点击我)</a
+            >
+          </div>
+        </div>
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/issacrebirth.png"
+            alt="issacRebirth"
+            style="height: 100%"
+          />
+        </div>
+      </div>
+
+      <!--darksoulsII-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/darksoulsII.jpg"
+            alt="darksoulsII"
+            style="height: 100%"
+          />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">黑暗之魂II [本体+DLC]</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-gZhDv提取码:yjxs
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a
+              href="https://www.bilibili.com/video/BV1foSTYDERU/?spm_id_from=333.1387.upload.video_card.click&vd_source=43b643253e3ee6554a4fdecbff21b1b5"
+              >请参照up对应视频内的操作(点击我)</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--eldenring-->
+      <div class="neirong">
+        <!--资源说明-->
+        <div class="wenzhang">
+          <div class="biaoti">艾尔登法环 <br />[本体+DLC]</div>
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-FZhDv提取码:yjxs
+          </div>
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a
+              href="https://www.bilibili.com/video/BV1geUWYUEkw/?spm_id_from=333.1387.upload.video_card.click"
+              >up的对应视频,请参照视频内的操作(点击我)</a
+            >
+          </div>
+        </div>
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/eldenring.png"
+            alt="eldenring"
+            style="height: 100%"
+          />
+        </div>
+      </div>
+
+      <!--蔚蓝-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img src="images/celeste.jpg" alt="celeste" style="height: 100%" />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti"><br />蔚蓝Celeste</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b
+            >https://pan.baidu.com/s/1eGc55ezQz0tpNInLrOR1KQ?pwd=bttp
+            提取码:bttp
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a
+              href="https://www.bilibili.com/video/BV1q9UkY2EQc/?spm_id_from=333.1387.upload.video_card.click"
+              >up的对应视频,请参照视频内的操作(点击我)</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--darksouls-->
+      <div class="neirong">
+        <div class="wenzhang">
+          <div class="biaoti">黑暗之魂重制版<br />[本体+DLC]</div>
+          <div class="wenzi">
+            <b>资源链接: </b>https://www.123865.com/s/ATd7Td-YZhDv提取码:yjxs
+          </div>
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a
+              href="https://www.bilibili.com/video/BV1X2UaYrEns/?spm_id_from=333.1387.upload.video_card.click"
+              >up的对应视频,请参照视频内的操作(点击我)</a
+            >
+          </div>
+        </div>
+        <div class="tupian">
+          <img src="images/darksouls.png" style="height: 100%" />
+        </div>
+      </div>
+
+      <!--Ender Lilies-->
+      <div class="neirong">
+        <!--图片-->
+        <div class="tupian">
+          <img
+            src="images/enderlilies.jpg"
+            alt="终焉之莉莉"
+            style="height: 100%"
+          />
+        </div>
+        <!--资源说明-->
+        <div class="wenzhang">
+          <!--游戏标题-->
+          <div class="biaoti">终焉之莉莉EnderLilies</div>
+          <!--资源链接框-->
+          <div class="wenzi">
+            <b>资源链接: </b
+            >https://pan.baidu.com/s/1RIg0e9yD_odP_2vlJzfXSw?pwd=yqu8
+            提取码:yqu8
+          </div>
+          <!--运行演示框-->
+          <div class="wenzi">
+            <b>运行演示:</b
+            ><a
+              href="https://www.bilibili.com/video/BV1JCULYzEMA/?spm_id_from=333.1387.upload.video_card.click"
+              >up的对应视频,请参照视频内的操作(点击我)</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--底部栏-->
+      <div class="dibu">
+        Copyright © 2025
+        <a href="https://github.com/yjxss">yjxss</a> .AllRightsReserved.
+      </div>
+    </article>
+  </body>
+</html>
